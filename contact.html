@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+ <title>contact me</title>
+ <style>
+  body{
+    background-color:rgb(204, 195, 195);
+  }
+
+  .button{
+    cursor: pointer;
+  }
+  .contact{
+      text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    border: black;
+    color: black;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+  }
+  form{
+       text-align: center;
+       margin:27px;
+  }
+
+  div.buttons input{
+    border-radius: 23px;
+    margin: 9px;
+    padding: 9px;
+  }
+
+  div.buttons a{
+    border-radius: 23px;
+    margin: 9px;
+    padding: 9px;
+  }
+
+  div.buttons input:hover{
+    color: aquamarine;
+    background-color: blue;
+  }
+
+  div.buttons a:hover{
+    color: aquamarine;
+    background-color: blue;
+  }
+.issue{
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  
+
+}
+
+.notice{
+font-size: 36px;
+color: red;
+
+}
+
+.all{
+  margin: 120px;
+  padding: 50px;
+}
+</style>
+</head>
+ <body>
+  <form action="/backend.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" ><br><br>
+
+    <label for="email">Email id:</label><br>
+    <input type="email" id="email" name="email" ><br><br>
+
+
+   <div class="buttons">
+    <input class="button"  type="submit" value="Submit" >
+    <a class="contact" href="mailto:anujmishra856999@email.com">contact me</a>
+    <input class="button" type="reset" value="Reset Now">
+   </div>
+   
+   <div class="all">
+    <h1 class="issue"> <span class="notice">Notice:</span>If there is some issue to submit then click on contact me button and send me a email  </h1>
+    </div>
+  </form>
+
+
+
+
+  
+</body>
+</html>

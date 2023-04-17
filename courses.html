@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Online Course Store</title>
+    <style>
+      /* Add CSS styles here */
+      /* Example: */
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+      }
+
+      .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .course {
+        width: 30%;
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .course h3 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>My Online Course Store</h1>
+      </header>
+      <section class="courses">
+        <article class="course">
+          <h3>Learn HTML</h3>
+          <p>Learn how to create a website using HTML</p>
+          <button>Enroll Now</button>
+        </article>
+        <article class="course">
+          <h3>Learn CSS</h3>
+          <p>Learn how to style your website using CSS</p>
+          <button>Enroll Now</button>
+        </article>
+        <article class="course">
+          <h3>Learn JavaScript</h3>
+          <p>Learn how to add interactivity to your website using JavaScript</p>
+          <button>Enroll Now</button>
+        </article>
+      </section>
+    </div>
+		<script>
+  // Get all buttons on the page
+  const buttons = document.querySelectorAll("button");
+
+  // Add click event listener to each button
+  
+  // buttons.forEach(function(button) {
+  //   button.addEventListener("click", function() {
+  //      alert("You have enrolled in the course!");
+      
+  //   });
+  // });
+  
+  
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function redirect() {
+      window.location.href = "contact.html"      
+    });
+  });
+</script>
+
+  </body>
+</html>
